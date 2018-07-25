@@ -9,10 +9,10 @@
             <elem name="SecondSetOfJoints"> 4  5  0  1 </elem>
         </paramlist>
        
-        <param name="period"> 5                </param>
+        <param name="period"> 5                   </param>
         <param name="name">   /icub02/left_leg    </param>
-        <param name="ports">  left_leg          </param>
-        <param name="joints"> 6                 </param>
+        <param name="ports">  left_leg            </param>
+        <param name="joints"> 6                   </param>
        
        
         <action phase="startup" level="5" type="attach">
