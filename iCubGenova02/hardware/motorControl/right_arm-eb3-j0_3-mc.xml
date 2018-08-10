@@ -93,7 +93,6 @@
         <param name="trq_ktau">         -0.56      -1.45      -1.45      -1.40    </param>
    </group>
 
-
    <group name="2FOC_CUR_CONTROL">
         <param name="controlLaw">       limitscurrent          </param>
          <param name="fbkControlUnits">  machine_units                              </param> 
