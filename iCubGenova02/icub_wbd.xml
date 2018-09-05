@@ -105,6 +105,5 @@
         <xi:include href="wrappers/motorControl/icub_ros_wrapper.xml" />
   -->    
     </devices>
-    
 </robot> 
 
