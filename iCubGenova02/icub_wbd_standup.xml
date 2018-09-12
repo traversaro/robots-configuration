@@ -108,5 +108,5 @@
     
     <!-- ROS-based publisher -->
   <!--  <xi:include href="wrappers/motorControl/icub_ros_wrapper.xml" /> -->
-    
+
     </robot> 
