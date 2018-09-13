@@ -14,7 +14,6 @@
         <param name="ports">  left_leg            </param>
         <param name="joints"> 6                   </param>
        
-       
         <action phase="startup" level="5" type="attach">
             <paramlist name="networks">
                 <!-- The param value must match the device name in the corresponding body_part-ebx-mc file -->
