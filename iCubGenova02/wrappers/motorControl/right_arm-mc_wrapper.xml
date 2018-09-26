@@ -18,7 +18,7 @@
         <action phase="startup" level="5" type="attach">
             <paramlist name="networks">
                 <!-- The param value must match the device name in the corresponding right_lower_arm-jx_y-mc.xml file -->
-                <elem name="FirstSetOfJoints">  right_arm-eb3-j0_3-mc       </elem>
+                <elem name="FirstSetOfJoints">  right_arm-eb3-j0_3-jtcvc       </elem>
                 <elem name="SecondSetOfJoints"> right_arm-eb4-j4_15-mc      </elem>
                 <elem name="Calibrator">        right_arm-calibrator        </elem>
             </paramlist>

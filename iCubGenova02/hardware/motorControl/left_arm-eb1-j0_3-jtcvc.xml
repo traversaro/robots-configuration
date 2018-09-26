@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE devices PUBLIC "-//YARP//DTD yarprobotinterface 3.0//EN" "http://www.yarp.it/DTD/yarprobotinterfaceV3.0.dtd">
+
+  <device xmlns:xi="http://www.w3.org/2001/XInclude" name="left_arm-eb1-j0_3-jtcvc" type="jointTorqueControlViaCurrent">
+      <xi:include href="../../general.xml"/>
+      <xi:include href="../../hardware/electronics/left_arm-eb1-j0_3-eln.xml" />
+      <xi:include href="../../hardware/mechanicals/left_arm-eb1-j0_3-mec.xml" />
+
+      <xi:include href="./left_arm-eb1-j0_3-mc_service.xml" />
+
+      <group name="TORQUE_CURRENT_GAINS">
+		    <param name="kt">(   0.15        0.15       0.15       0.15   )</param>
+		    <param name="kc">(   0.0         0.0        0.0       0.0 )</param>
+		    <param name="kv">(   0.0004       0.0004        0.0004       0.0004   )</param>
+                    <param name="kfc">(   0.0            0.0            0.0            0.0           )</param>
+		    <param name="max_curr">(   2.0            2.0            2.0            2.0   )</param>
+      </group>
+
+      <group name="FROM_MOTORS_TO_JOINTS_KINEMATIC_COUPLINGS">
+          <param name="axesNames">("r_shoulder_pitch"   "r_shoulder_roll"   "r_shoulder_yaw"   "r_elbow" )</param> 
+          <param name="motorNames">("2B0M0"   "2B0M1"   "2B1M0"   "2B1M1" )</param> 
+          <param name="r_shoulder_pitch">( ( 1.0,"2B0M0") )</param>
+          <param name="r_shoulder_roll">( ( 1.0,"2B0M0")   ( 0.615,"2B0M1")  )</param> 
+          <param name="r_shoulder_yaw">( ( -0.615,"2B0M1")    ( 0.615,"2B1M0") )</param>
+          <param name="r_elbow">( (1.0,"2B1M1") )</param>
+      </group>
+
+      <action phase="startup" level="5" type="attach">
+          <paramlist name="networks">
+              <elem name="HijackedControlBoard"> left_arm-eb1-j0_3-mcc </elem>
+          </paramlist>
+      </action>
+
+  </device>
+
