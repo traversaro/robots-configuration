@@ -12,7 +12,7 @@
 		    <param name="kt">(   -0.150921       -0.096339    )</param>
 		    <param name="kc">(  0.0           0.0 )</param>
 		    <param name="kv">(    0.001343        0.000520    )</param>
-		    <param name="kfc">(   0.5            0.5          )</param>
+		    <param name="kfc">(   0.0            0.0          )</param>
 		    <param name="max_curr">(   2.0            2.0     )</param>
       </group>
 

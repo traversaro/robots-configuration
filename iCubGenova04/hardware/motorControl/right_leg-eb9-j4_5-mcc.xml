@@ -15,7 +15,7 @@
           <param name="kff">(  2.696009       4.331915    )</param>
           <param name="kbef">(    0.001709       0.002729    )</param>
           <param name="wbef">(   0.85         0.85     )</param>
-          <param name="offset">(  0.331603       -0.429394    )</param>
+          <param name="offset">(  0.0       0.0    )</param>
           <param name="maxPwm">(   80.0           80.0  )</param>
       </group>
 

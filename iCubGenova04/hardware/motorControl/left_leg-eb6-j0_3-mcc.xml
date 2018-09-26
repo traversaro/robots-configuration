@@ -9,13 +9,13 @@
       <xi:include href="./left_leg-eb6-j0_3-mc_service.xml" />
 
       <group name="CURRENT_PIDS">
-        <param name="kp">(   0.0         0.0        0.0       0.0    )</param>
-        <param name="ki">(   0.0         0.0        0.0       0.0    )</param>
-        <param name="maxInt">(   0.0         0.0        0.0       0.0    )</param>
+        <param name="kp">(   0.8         0.8        1.0       0.6    )</param>
+        <param name="ki">(   15.0         20.0        20.0       30.0    )</param>
+        <param name="maxInt">(   5.0         5.0        5.0       5.0    )</param>
         <param name="kff">(   3.403561       2.821952       3.313299       3.280952    )</param>
         <param name="kbef">(   0.002224       0.002076       0.002157       0.002212   )</param>
         <param name="wbef">(   0.85         0.85        0.85       0.85    )</param>
-        <param name="offset">(   0.742495       -0.983387       0.138638       -0.050949   )</param>
+        <param name="offset">(   0.0       0.0       0.0       0.0   )</param>
         <param name="maxPwm">( 80.0 80.0 80.0 80.0 )</param>
       </group>
 
