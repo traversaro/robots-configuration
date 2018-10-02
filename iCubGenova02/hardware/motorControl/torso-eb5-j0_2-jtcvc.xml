@@ -9,7 +9,7 @@
       <xi:include href="./torso-eb5-j0_2-mc_service.xml" />
 
       <group name="TORQUE_CURRENT_GAINS">
-        <param name="kt">(   -0.245227       -0.297433       -0.465476    )</param> 
+        <param name="kt">(   -0.25       -0.25       -0.25    )</param> 
         <param name="kv">(   0.000612       0.000436       0.000447    )</param>
         <param name="kc">(   0.0         0.0        0.0    )</param>
         <param name="kfc">(   0.0            0.0            0.0       )</param>
@@ -17,11 +17,11 @@
       </group>
 
       <group name="FROM_MOTORS_TO_JOINTS_KINEMATIC_COUPLINGS">
-          <param name="axesNames">(   "torso_yaw"        "torso_roll"       "torso_pitch"   )</param> 
-          <param name="motorNames">(   "0B4M0"       "0B3M0"       "0B3M1"    )</param> 
-          <param name="torso_yaw">(   (0.5,"0B4M0")  (0.5,"0B3M0")   (0.0,"0B3M1")      )</param>
-          <param name="torso_roll">(  (-0.5,"0B4M0") (0.500,"0B3M0") (0.0,"0B3M1")      )</param> 
-          <param name="torso_pitch">( (0.275,"0B4M0") (0.275,"0B3M0")  (0.55,"0B3M1")   )</param> 
+          <param name="axesNames">(   "torso_yaw"      "torso_roll"        "torso_pitch"          )</param> 
+          <param name="motorNames">(  "0B4M0"             "0B3M0"       "0B3M1"           )</param> 
+          <param name="torso_roll">(   (0.5,"0B3M0")  (0.5,"0B3M1")   (0.0,"0B4M0")      )</param>
+          <param name="torso_pitch">(  (-0.5,"0B3M0") (0.500,"0B3M1") (0.0,"0B4M0")      )</param> 
+          <param name="torso_yaw">( (0.275,"0B3M0") (0.275,"0B3M1")  (0.55,"0B4M0")   )</param> 
       </group>
 
       <action phase="startup" level="5" type="attach">
