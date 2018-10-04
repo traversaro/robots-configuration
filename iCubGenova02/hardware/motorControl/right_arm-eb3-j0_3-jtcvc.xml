@@ -9,9 +9,9 @@
       <xi:include href="./right_arm-eb3-j0_3-mc_service.xml" />
 
       <group name="TORQUE_CURRENT_GAINS">
-		    <param name="kt">(   -0.15        -0.15       -0.15       -0.15   )</param>
+		    <param name="kt">(   -0.160695       -0.391429       -0.636335       -0.15   )</param>
 		    <param name="kc">(   0.0         0.0        0.0       0.0 )</param>
-		    <param name="kv">(   0.0004       0.0004        0.0004       0.0004   )</param>
+		    <param name="kv">(   0.000249       0.000391       0.000361       0.0004   )</param>
                     <param name="kfc">(   0.0            0.0            0.0            0.0           )</param>
 		    <param name="max_curr">(   2.0            2.0            2.0            2.0   )</param>
       </group>
