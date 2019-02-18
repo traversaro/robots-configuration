@@ -9,11 +9,11 @@
       <xi:include href="./left_leg-eb7-j4_5-mc_service.xml" />
 
       <group name="TORQUE_CURRENT_GAINS">
-  		  <param name="kt">(   0.150921       0.096339    )</param>
-  		  <param name="kc">(  0.0           0.0 )</param>
-  		  <param name="kv">(    0.001343        0.000520    )</param>
-                  <param name="kfc">(   0.0            0.0          )</param>
-  		  <param name="max_curr">(   2.0            2.0     )</param>
+        <param name="kt">(   0.162240       0.162960    )</param>
+        <param name="kv">(   0.001652       0.002557    )</param>
+        <param name="kc">(   0.162240       0.162960    )</param>
+        <param name="kfc">(   0.4            0.4          )</param>
+  		  <param name="max_curr">(   4.0            4.0     )</param>
       </group>
 
       <action phase="startup" level="5" type="attach">
