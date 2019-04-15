@@ -16,7 +16,7 @@
             <group name="CANBOARDS"> 
                 <param name="type">                 psc              </param> 
                 <group name="PROTOCOL">                    
-                    <param name="major">            0                  </param>    
+                    <param name="major">            2                  </param>    
                     <param name="minor">            0                  </param>     
                 </group>                                   
                 <group name="FIRMWARE">                    
@@ -27,7 +27,7 @@
             </group>
             
             <group name="PSC"> 
-                <param name="location">             CAN1:11  CAN1:12   CAN1:13        </param> 
+                <param name="location">  CAN1:1  CAN1:2   CAN1:3        </param> 
             </group>                      
             
            
@@ -35,24 +35,24 @@
             <group name="JOINTMAPPING">
 
                 <group name="ACTUATOR">                 
-                    <param name="type">              pwm                 pwm                    </param>
-                    <param name="port">              CONN:P3             CONN:P2                </param>
+                    <param name="type">                 pwm                 pwm                    </param>
+                    <param name="port">                 CONN:P3             CONN:P2                </param>
                 </group>
                 
                 <group name="ENCODER1">  
-                    <param name="type">                psc                psc                    </param>  
-                    <param name="port">               PSC:finger0    PSC:finger1                 </param>
-                    <param name="position">            atjoint             atjoint               </param>
-                    <param name="resolution">          65535               65535                 </param> <!-- 65535:this value will change by fw during calibration (type 6 or 7) --> 
-                    <param name="tolerance">           0                  0                      </param>  
+                    <param name="type">                 psc                 psc                    </param>  
+                    <param name="port">                 PSC:finger0         PSC:finger1                 </param>
+                    <param name="position">             atjoint             atjoint               </param>
+                    <param name="resolution">           65535               65535                 </param> <!-- 65535:this value will change by fw during calibration (type 6 or 7) --> 
+                    <param name="tolerance">            0                   0                      </param>  
                 </group>        
                 
                 <group name="ENCODER2">
-                    <param name="type">                qenc                qenc                 </param>
-                    <param name="port">                CONN:P3             CONN:P2              </param>
-                    <param name="position">            atmotor             atmotor              </param>
-                    <param name="resolution">          1024                1024                 </param>
-                    <param name="tolerance">           0                   0                    </param>  
+                    <param name="type">                 qenc                qenc                 </param>
+                    <param name="port">                 CONN:P3             CONN:P2              </param>
+                    <param name="position">             atmotor             atmotor              </param>
+                    <param name="resolution">           1024                1024                 </param>
+                    <param name="tolerance">            0                   0                    </param>  
                 </group>  
             </group>    
             
