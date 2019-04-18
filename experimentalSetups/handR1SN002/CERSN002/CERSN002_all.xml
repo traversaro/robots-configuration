@@ -4,13 +4,14 @@
 <robot name="CERSN002" build="1" portprefix="cer">
 
     
-	<!-- LEFT HAND --> 
-<!--
-    <devices file="hardware/motorControl/cer_left_hand-mcp9-mc.xml" />
-    <devices file="wrappers/motorControl/cer_left_hand-mc_wrapper.xml" />
--->
+    <!-- LEFT HAND --> 
     
-    <!-- RIGHT HAND 
+     <devices file="hardware/motorControl/cer_left_hand-mcp9-mc.xml" />
+    <devices file="wrappers/motorControl/cer_left_hand-mc_wrapper.xml" />
+   
+
+
+<!-- RIGHT HAND 
     <devices file="hardware/motorControl/cer_right_hand-mcp9-mc.xml" />
     <devices file="wrappers/motorControl/cer_right_hand-mc_wrapper.xml" />
     <devices file="hardware/MAIS/right_hand-multi_enc.xml" />
@@ -21,9 +22,13 @@
     <!--  CALIBRATORS 
     <devices file="calibrators/cer_left_hand-calib.xml" />
     <devices file="calibrators/cer_right_hand-calib.xml" /> -->
-    
-    <devices file="wrappers/PSC/cer_left_arm-PSC_wrapper.xml" /> 
+<!--    
+
+-->
+   <devices file="wrappers/PSC/cer_left_arm-PSC_wrapper.xml" /> 
     <devices file="hardware/PSC/left_hand-psc.xml" /> 
+
+
 
 </robot> 
 
