@@ -45,7 +45,8 @@
         <!-- ATTENTION: PID VALUES are not safe!!! -->
          <group name="JOINT_PID_V1">
 	        <param name="controlLaw">       Pid_inPos_outPwm                          </param> 
-            <param name="controlUnits">     metric_units                                        </param> 
+            <param name="fbkControlUnits">  machine_units   </param>
+            <param name="outputControlUnits">  machine_units      </param> 
             <param name="pos_kp">                -200.00     -200.00     -200.00      500.00        </param>       
             <param name="pos_kd">                   0.0         0.0         0.0         0.0         </param>     
             <param name="pos_ki">                   0.0         0.0         0.0         0.0         </param>       
@@ -62,7 +63,8 @@
 <!-- ATTENTION: this is an experiment!!!!! -->
         <group name="PID_POS_VEL">
 	        <param name="controlLaw">       PidPos_withInnerVelPid                                 </param> 
-            <param name="controlUnits">     metric_units                                            </param> 
+            <param name="fbkControlUnits">  machine_units   </param>
+            <param name="outputControlUnits">  machine_units      </param> 
             <param name="pos_kp">                -211.00     -222.00     -233.00      555.00        </param>       
             <param name="pos_kd">                   0.0         0.0         0.0         0.0         </param>     
             <param name="pos_ki">                   0.0         0.0         0.0         0.0         </param>       
@@ -97,12 +99,12 @@
         <param name="trq_maxInt">           0          0         0        0         </param>       
         <param name="trq_shift">            0          0         0        0         </param>       
         <param name="trq_ko">               0          0         0        0         </param>       
-        <param name="trq_stictionUp">       0          0         0        0         </param>       
-        <param name="trq_stictionDwn">      0          0         0        0         </param>       
+        <param name="trq_stictionUp">0 0 0 0</param>       
+        <param name="trq_stictionDwn">0 0 0 0</param>       
         <param name="trq_kff">              0          0         0        0         </param>  
-        <param name="trq_kbemf">            0          0         0        0         </param>            
+        <param name="trq_kbemf">0 0 0 0</param>            
         <param name="trq_filterType">       0          0         0        0         </param>     
-        <param name="trq_ktau">             0          0         0        0         </param>
+        <param name="trq_ktau">0 0 0 0</param>
      <param name="vel_kp">                 -111.00       -12.00     -13.00          144.00     </param>       
     <param name="vel_kd">                   0.0         0.0         0.0         0.0         </param>     
     <param name="vel_ki">                   0.0         0.0         0.0         0.0         </param>       
@@ -117,7 +119,8 @@
 
     <group name="PID_VEL">
 	        <param name="controlLaw">       Pid_inVel_outPwm                                        </param> 
-            <param name="controlUnits">     metric_units                                            </param> 
+            <param name="fbkControlUnits">  machine_units   </param>
+            <param name="outputControlUnits">  machine_units      </param> 
             <param name="vel_kp">                 -11.00       -12.00     -13.00          14.00         </param>       
             <param name="vel_kd">                   0.0         0.0         0.0         0.0         </param>     
             <param name="vel_ki">                   0.0         0.0         0.0         0.0         </param>       
@@ -134,7 +137,8 @@
 
     <group name="MOTOR_PID_WITH_FRICTION_V1">
         <param name="controlLaw">    Pid_inTrq_outPwm               </param> 
-        <param name="controlUnits">  metric_units                             </param>         
+        <param name="fbkControlUnits">  machine_units   </param>
+        <param name="outputControlUnits">  machine_units      </param>         
         <param name="trq_kp">              0          0          0          444     </param>       
         <param name="trq_kd">              0          0          0          0     </param>       
         <param name="trq_ki">              0          0          0          0     </param>       
@@ -142,12 +146,12 @@
         <param name="trq_maxInt">          0          0          0          0     </param>       
         <param name="trq_shift">           0          0          0          0     </param>       
         <param name="trq_ko">              0          0          0          0     </param>       
-        <param name="trq_stictionUp">      0          0          0          0     </param>       
-        <param name="trq_stictionDwn">     0          0          0          0     </param>       
+        <param name="trq_stictionUp">0 0 0 0</param>       
+        <param name="trq_stictionDwn">0 0 0 0</param>       
         <param name="trq_kff">             0          0          0          0     </param>  
-        <param name="trq_kbemf">           0          0          0          0     </param>            
+        <param name="trq_kbemf">0 0 0 0</param>            
         <param name="trq_filterType">      0          0          0          0     </param>     
-        <param name="trq_ktau">            0          0          0          0     </param>
+        <param name="trq_ktau">0 0 0 0</param>
     </group>
   
   </device>

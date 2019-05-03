@@ -43,7 +43,8 @@
         <!-- ATTENTION: PID VALUES are not safe!!! -->
         <group name="POSITION_CONTROL_DI_TIPO1_INGRESSO_POS_USCITA_VEL_E_2FOC_FA_VEL1">
             <param name="controlLaw">       ...control_law2                                        </param>    
-            <param name="controlUnits">     metric_units                                        </param> 
+            <param name="fbkControlUnits">  machine_units   </param>
+            <param name="outputControlUnits">  machine_units      </param> 
             <param name="pos_kp">                -500.00     -200.00     -200.00      500.00        </param>       
             <param name="pos_kd">                   0.0         0.0         0.0         0.0         </param>     
             <param name="pos_ki">                   0.0         0.0         0.0         0.0         </param>       
@@ -68,7 +69,8 @@
         
             <group name="POSITION_CONTROL_DI_TIPO1_INGRESSO_POS_USCITA_VEL_E_2FOC_FA_VEL2">
             <param name="controlLaw">       ...control_law2                                        </param>    
-            <param name="controlUnits">     metric_units                                        </param> 
+            <param name="fbkControlUnits">  machine_units   </param>
+            <param name="outputControlUnits">  machine_units      </param> 
             <param name="pos_kp">                -500.00     -200.00     -200.00      500.00        </param>       
             <param name="pos_kd">                   0.0         0.0         0.0         0.0         </param>     
             <param name="pos_ki">                   0.0         0.0         0.0         0.0         </param>       
@@ -95,7 +97,8 @@
     
         <group name="POSITION_CONTROL_DI_TIPO1_INGRESSO_POS_USCITA_PWM">
             <param name="controlLaw">       pidsimple                                        </param>    
-            <param name="controlUnits">     metric_units                                        </param> 
+            <param name="fbkControlUnits">  machine_units   </param>
+            <param name="outputControlUnits">  machine_units      </param> 
             <param name="pos_kp">                -500.00     -200.00     -200.00      500.00        </param>       
             <param name="pos_kd">                   0.0         0.0         0.0         0.0         </param>     
             <param name="pos_ki">                   0.0         0.0         0.0         0.0         </param>       
@@ -110,7 +113,8 @@
  
          <group name="POSITION_CONTROL_CON_LOOP_INTERNO_DI_CORRENTE">
             <param name="controlLaw">       joint_pid_v1                                        </param>    
-            <param name="controlUnits">     metric_units                                        </param> 
+            <param name="fbkControlUnits">  machine_units   </param>
+            <param name="outputControlUnits">  machine_units      </param> 
             <param name="kp">                -500.00     -200.00     -200.00      500.00        </param>       
             <param name="kd">                   0.0         0.0         0.0         0.0         </param>     
             <param name="ki">                   0.0         0.0         0.0         0.0         </param>       
@@ -126,7 +130,8 @@
         <group name="TORQUE_CONTROL_1">
             <param name="controlLaw">       motor_pid_with_friction_v1                   </param>
             <param name="outputType">           pwm         pwm         pwm       pwm    </param>
-            <param name="controlUnits">         metric_units                             </param> 
+            <param name="fbkControlUnits">  machine_units   </param>
+            <param name="outputControlUnits">  machine_units      </param> 
             <param name="kp">                   0           0           0           0    </param>    
             <param name="kd">                   0           0           0           0    </param>        
             <param name="ki">                   0           0           0           0    </param>        
@@ -145,7 +150,8 @@
        <group name="TORQUE_CONTROL_2">
             <param name="controlLaw">       motor_pid_with_friction_v1                   </param>
             <param name="outputType">           vel         vel         vel        vel    </param>
-            <param name="controlUnits">         metric_units                             </param> 
+            <param name="fbkControlUnits">  machine_units   </param>
+            <param name="outputControlUnits">  machine_units      </param> 
             <param name="kp">                   0           0           0           0    </param>    
             <param name="kd">                   0           0           0           0    </param>        
             <param name="ki">                   0           0           0           0    </param>        

@@ -23,7 +23,8 @@
     
 	<group name="POSITION_CONTROL">
         <param name="controlLaw">    joint_pid_v1           	  </param>    
-        <param name="controlUnits">  metric_units                 </param> 
+        <param name="fbkControlUnits">  machine_units   </param>
+        <param name="outputControlUnits">  machine_units      </param> 
         <param name="kp">            568.00     568.00                </param>       
         <param name="kd">            0	        0                     </param>       
         <param name="ki">            0	        0                     </param>        
@@ -38,7 +39,8 @@
 	
 	<group name="TORQUE_CONTROL">
         <param name="controlLaw">    motor_pid_with_friction_v1 </param>    
-        <param name="controlUnits">  metric_units               </param> 
+        <param name="fbkControlUnits">  machine_units   </param>
+        <param name="outputControlUnits">  machine_units      </param> 
         <param name="kp">              0	0                      </param>       
         <param name="kd">              0	0                        </param>       
         <param name="ki">              0	0                        </param>       
