@@ -28,24 +28,24 @@
 
 
     <group name="CONTROLS">
-        <param name="positionControl">         JOINT_MINJERK_OUT_PWM_CTRL       JOINT_MINJERK_OUT_PWM_CTRL   </param>
-    <!--<param name="positionControl">         JOINT_MINJERK_OUT_VEL_CTRL       JOINT_MINJERK_OUT_VEL_CTRL   </param>
-        <param name="positionControl">         JOINT_MINJERK_OUT_CUR_CTRL       JOINT_MINJERK_OUT_CUR_CTRL   </param>-->
+    <!--    <param name="positionControl">         JOINT_MINJERK_OUT_PWM_CTRL       JOINT_MINJERK_OUT_PWM_CTRL   </param>
+    <param name="positionControl">         JOINT_MINJERK_OUT_VEL_CTRL       JOINT_MINJERK_OUT_VEL_CTRL   </param>-->
+        <param name="positionControl">         JOINT_MINJERK_OUT_CUR_CTRL       JOINT_MINJERK_OUT_CUR_CTRL   </param>
         
-        <param name="velocityControl">         JOINT_MINJERK_OUT_PWM_CTRL       JOINT_MINJERK_OUT_PWM_CTRL   </param>
-    <!--<param name="velocityControl">         JOINT_MINJERK_OUT_VEL_CTRL       JOINT_MINJERK_OUT_VEL_CTRL   </param>
-        <param name="velocityControl">         JOINT_MINJERK_OUT_CUR_CTRL       JOINT_MINJERK_OUT_CUR_CTRL   </param>-->
+    <!--    <param name="velocityControl">         JOINT_MINJERK_OUT_PWM_CTRL       JOINT_MINJERK_OUT_PWM_CTRL   </param>
+    <param name="velocityControl">         JOINT_MINJERK_OUT_VEL_CTRL       JOINT_MINJERK_OUT_VEL_CTRL   </param>-->
+        <param name="velocityControl">         JOINT_MINJERK_OUT_CUR_CTRL       JOINT_MINJERK_OUT_CUR_CTRL   </param>
         
-        <param name="mixedControl">            JOINT_MINJERK_OUT_PWM_CTRL       JOINT_MINJERK_OUT_PWM_CTRL   </param>
-    <!--<param name="mixedControl">            JOINT_MINJERK_OUT_VEL_CTRL       JOINT_MINJERK_OUT_VEL_CTRL   </param>
-        <param name="mixedControl">            JOINT_MINJERK_OUT_CUR_CTRL       JOINT_MINJERK_OUT_CUR_CTRL   </param>-->
+    <!--    <param name="mixedControl">            JOINT_MINJERK_OUT_PWM_CTRL       JOINT_MINJERK_OUT_PWM_CTRL   </param>
+    <param name="mixedControl">            JOINT_MINJERK_OUT_VEL_CTRL       JOINT_MINJERK_OUT_VEL_CTRL   </param>-->
+        <param name="mixedControl">            JOINT_MINJERK_OUT_CUR_CTRL       JOINT_MINJERK_OUT_CUR_CTRL   </param>
         
-        <param name="posDirectControl">        JOINT_DIRECT_OUT_PWM_CTRL        JOINT_DIRECT_OUT_PWM_CTRL    </param>
-    <!--<param name="posDirectControl">        JOINT_DIRECT_OUT_VEL_CTRL        JOINT_DIRECT_OUT_VEL_CTRL    </param>        
+    <!--    <param name="posDirectControl">        JOINT_MINJERK_OUT_PWM_CTRL        JOINT_MINJERK_OUT_PWM_CTRL    </param>
+    <param name="posDirectControl">        JOINT_DIRECT_OUT_VEL_CTRL        JOINT_DIRECT_OUT_VEL_CTRL    </param>        
         <param name="posDirectControl">        JOINT_DIRECT_OUT_CUR_CTRL        JOINT_DIRECT_OUT_CUR_CTRL    </param>-->        
         
-        <param name="velDirectControl">        JOINT_DIRECT_OUT_PWM_CTRL        JOINT_DIRECT_OUT_PWM_CTRL    </param>
-    <!--<param name="velDirectControl">        JOINT_DIRECT_OUT_VEL_CTRL        JOINT_DIRECT_OUT_VEL_CTRL    </param>
+    <!--    <param name="velDirectControl">        JOINT_MINJERK_OUT_PWM_CTRL        JOINT_MINJERK_OUT_PWM_CTRL    </param>
+    <param name="velDirectControl">        JOINT_DIRECT_OUT_VEL_CTRL        JOINT_DIRECT_OUT_VEL_CTRL    </param>
         <param name="velDirectControl">        JOINT_DIRECT_OUT_CUR_CTRL        JOINT_DIRECT_OUT_CUR_CTRL    </param>-->
         
         <param name="torqueControl">           none                             none                         </param>
@@ -84,10 +84,10 @@
         <param name="fbkControlUnits">        metric_units              </param> 
         <param name="outputControlUnits">     machine_units             </param>
         <param name="kff">                       0.0         0.0        </param> 
-        <param name="kp">                        0.0        -0.0        </param>          
+        <param name="kp">                       100.0     -100.0        </param>          
         <param name="kd">                        0.0         0.0        </param>          
-        <param name="ki">                        0.0        -0.0        </param>              
-        <param name="maxOutput">               800         800          </param>                
+        <param name="ki">                       100.0     -100.0        </param>              
+        <param name="maxOutput">               2500       2500          </param>                
         <param name="maxInt">                  750        1000          </param>         
         <param name="stictionUp">                0           0          </param>          
         <param name="stictionDown">              0           0          </param>     

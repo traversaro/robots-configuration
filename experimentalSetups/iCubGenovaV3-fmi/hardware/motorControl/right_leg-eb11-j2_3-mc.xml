@@ -29,28 +29,28 @@
 
 
     <group name="CONTROLS">
-        <param name="positionControl">         JOINT_MINJERK_OUT_PWM_CTRL       JOINT_MINJERK_OUT_PWM_CTRL   </param>
-    <!--<param name="positionControl">         JOINT_MINJERK_OUT_VEL_CTRL       JOINT_MINJERK_OUT_VEL_CTRL   </param>
-        <param name="positionControl">         JOINT_MINJERK_OUT_CUR_CTRL       JOINT_MINJERK_OUT_CUR_CTRL   </param>-->
+        <!--<param name="positionControl">         JOINT_MINJERK_OUT_PWM_CTRL       JOINT_MINJERK_OUT_PWM_CTRL   </param> -->
+        <param name="positionControl">         JOINT_MINJERK_OUT_VEL_CTRL       JOINT_MINJERK_OUT_VEL_CTRL   </param>
+        <!--<param name="positionControl">         JOINT_MINJERK_OUT_CUR_CTRL       JOINT_MINJERK_OUT_CUR_CTRL   </param> --> 
+    
+        <!--<param name="velocityControl">         JOINT_MINJERK_OUT_PWM_CTRL       JOINT_MINJERK_OUT_PWM_CTRL   </param> -->
+        <param name="velocityControl">         JOINT_MINJERK_OUT_VEL_CTRL       JOINT_MINJERK_OUT_VEL_CTRL   </param>
+        <!--<param name="velocityControl">         JOINT_MINJERK_OUT_CUR_CTRL       JOINT_MINJERK_OUT_CUR_CTRL   </param> -->  
+    
+        <!--<param name="mixedControl">            JOINT_MINJERK_OUT_PWM_CTRL       JOINT_MINJERK_OUT_PWM_CTRL   </param> -->
+        <param name="mixedControl">            JOINT_MINJERK_OUT_VEL_CTRL       JOINT_MINJERK_OUT_VEL_CTRL   </param>
+        <!--<param name="mixedControl">            JOINT_MINJERK_OUT_CUR_CTRL       JOINT_MINJERK_OUT_CUR_CTRL   </param> -->
+    
+        <!--<param name="posDirectControl">        JOINT_MINJERK_OUT_PWM_CTRL        JOINT_MINJERK_OUT_PWM_CTRL    </param> -->
+        <param name="posDirectControl">        JOINT_DIRECT_OUT_VEL_CTRL        JOINT_DIRECT_OUT_VEL_CTRL    </param>        
+        <!--<param name="posDirectControl">        JOINT_DIRECT_OUT_CUR_CTRL        JOINT_DIRECT_OUT_CUR_CTRL    </param>-->        
         
-        <param name="velocityControl">         JOINT_MINJERK_OUT_PWM_CTRL       JOINT_MINJERK_OUT_PWM_CTRL   </param>
-    <!--<param name="velocityControl">         JOINT_MINJERK_OUT_VEL_CTRL       JOINT_MINJERK_OUT_VEL_CTRL   </param>
-        <param name="velocityControl">         JOINT_MINJERK_OUT_CUR_CTRL       JOINT_MINJERK_OUT_CUR_CTRL   </param>-->
-        
-        <param name="mixedControl">            JOINT_MINJERK_OUT_PWM_CTRL       JOINT_MINJERK_OUT_PWM_CTRL   </param>
-    <!--<param name="mixedControl">            JOINT_MINJERK_OUT_VEL_CTRL       JOINT_MINJERK_OUT_VEL_CTRL   </param>
-        <param name="mixedControl">            JOINT_MINJERK_OUT_CUR_CTRL       JOINT_MINJERK_OUT_CUR_CTRL   </param>-->
-        
-        <param name="posDirectControl">        JOINT_DIRECT_OUT_PWM_CTRL        JOINT_DIRECT_OUT_PWM_CTRL    </param>
-    <!--<param name="posDirectControl">        JOINT_DIRECT_OUT_VEL_CTRL        JOINT_DIRECT_OUT_VEL_CTRL    </param>        
-        <param name="posDirectControl">        JOINT_DIRECT_OUT_CUR_CTRL        JOINT_DIRECT_OUT_CUR_CTRL    </param>-->        
-        
-        <param name="velDirectControl">        JOINT_DIRECT_OUT_PWM_CTRL        JOINT_DIRECT_OUT_PWM_CTRL    </param>
-    <!--<param name="velDirectControl">        JOINT_DIRECT_OUT_VEL_CTRL        JOINT_DIRECT_OUT_VEL_CTRL    </param>
-        <param name="velDirectControl">        JOINT_DIRECT_OUT_CUR_CTRL        JOINT_DIRECT_OUT_CUR_CTRL    </param>-->
+        <!--<param name="velDirectControl">        JOINT_MINJERK_OUT_PWM_CTRL        JOINT_MINJERK_OUT_PWM_CTRL    </param> -->
+        <param name="velDirectControl">        JOINT_DIRECT_OUT_VEL_CTRL        JOINT_DIRECT_OUT_VEL_CTRL    </param>
+        <!--<param name="velDirectControl">        JOINT_DIRECT_OUT_CUR_CTRL        JOINT_DIRECT_OUT_CUR_CTRL    </param>-->
         
         <param name="torqueControl">           none                             none                         </param>
-    <!--<param name="torqueControl">           JOINT_TORQUE_OUT_PWM_CTRL        JOINT_TORQUE_OUT_PWM_CTRL    </param>
+        <!--<param name="torqueControl">           JOINT_TORQUE_OUT_PWM_CTRL        JOINT_TORQUE_OUT_PWM_CTRL    </param>
         <param name="torqueControl">           JOINT_TORQUE_OUT_VEL_CTRL        JOINT_TORQUE_OUT_VEL_CTRL    </param>
         <param name="torqueControl">           JOINT_TORQUE_OUT_CUR_CTRL        JOINT_TORQUE_OUT_CUR_CTRL    </param>-->
         
@@ -84,10 +84,10 @@
         <param name="fbkControlUnits">        metric_units              </param> 
         <param name="outputControlUnits">     machine_units             </param>
         <param name="kff">                       0.0         0.0        </param> 
-        <param name="kp">                      711.0      1066.0        </param>          
-        <param name="kd">                        0.0         0.0        </param>          
-        <param name="ki">                     7111.0      1066.0        </param>              
-        <param name="maxOutput">              8000        8000          </param>                
+        <param name="kp">                      100.0      100.0        </param>          
+        <param name="kd">                        0.0        0.0        </param>          
+        <param name="ki">                      100.0      100.0        </param>              
+        <param name="maxOutput">              2500        2500          </param>                
         <param name="maxInt">                  750        1000          </param>         
         <param name="stictionUp">                0           0          </param>          
         <param name="stictionDown">              0           0          </param>      
@@ -216,11 +216,11 @@
         <param name="controlLaw">          low_lev_current      </param> 
         <param name="fbkControlUnits">     machine_units        </param> 
         <param name="outputControlUnits">  machine_units        </param>
-        <param name="kff">                     0         0      </param>
-        <param name="kp">                      8         8      </param>       
-        <param name="kd">                      0         0      </param>       
-        <param name="ki">                      2         2      </param>
-        <param name="shift">                  10        10      </param>
+        <param name="kff">                     0        0       </param>
+        <param name="kp">                      0.008    0.008   </param>       
+        <param name="kd">                      0        0       </param>       
+        <param name="ki">                      0.002    0.002   </param>
+        <param name="shift">                   0        0       </param>
         <param name="maxOutput">           32000     32000      </param>                 
         <param name="maxInt">              32000     32000      </param>         
     </group>
@@ -230,10 +230,10 @@
         <param name="fbkControlUnits">     machine_units        </param> 
         <param name="outputControlUnits">  machine_units        </param>
         <param name="kff">                     0         0      </param>
-        <param name="kp">                     12        12      </param>       
+        <param name="kp">                      0.012     0.012  </param>       
         <param name="kd">                      0         0      </param>       
-        <param name="ki">                     16        16      </param>
-        <param name="shift">                  10        10      </param>
+        <param name="ki">                      0.016     0.016  </param>
+        <param name="shift">                   0         0      </param>
         <param name="maxOutput">           32000     32000      </param>                 
         <param name="maxInt">              32000     32000      </param>        
     </group>
