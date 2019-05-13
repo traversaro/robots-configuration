@@ -107,6 +107,6 @@
     <xi:include href="estimators/wholebodydynamics_standup.xml" />
     
     <!-- ROS-based publisher -->
-  <!--  <xi:include href="wrappers/motorControl/icub_ros_wrapper.xml" /> -->
+    <xi:include href="wrappers/motorControl/icub_ros_wrapper.xml" />
 
     </robot> 
