@@ -8,7 +8,7 @@
         <param name="AxisName">              "l_palm"           "l_thumb"       </param>
         <param name="AxisMap">               0                  1               </param>
         <param name="AxisType">              "revolute"         "revolute"      </param>
-        <param name="Encoder">               182.044            182.044         </param>
+        <param name="Encoder">                 182.044            182.044       </param>
         <param name="Gearbox_M2J">             1                 -1             </param>
         <param name="Gearbox_E2J">             1                  1             </param>
          <param name="useMotorSpeedFbk">       0                  0             </param>
@@ -42,12 +42,20 @@
         </param>
        
         <param name ="matrixE2J">  
-           -1.000   1.000   0.000   0.000   0.000   0.000
-            0.000   0.000   0.000   1.000  -1.000   0.000
+            0.5    -0.5    -0.5     0.5     0.000   0.000
+            0.000   0.000   0.000   0.000   1.0    -1.0
             0.000   0.000   0.000   0.000   0.000   0.000
             0.000   0.000   0.000   0.000   0.000   0.000   
         </param>
-                
+        
+        <!--
+        <param name ="matrixE2J">  
+            0.5    -0.5    -0.5     0.5     0.0     0.0
+            0.000   0.000   0.000   0.000   1.000  -1.000
+            0.000   0.000   0.000   0.000   0.000   0.000
+            0.000   0.000   0.000   0.000   0.000   0.000   
+        </param>
+        -->        
     </group>   
 
     <group name="JOINTSET_CFG"> 
