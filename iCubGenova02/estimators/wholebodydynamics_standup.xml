@@ -59,7 +59,7 @@
             <param name="/icub02/wholeBodyDynamics/left_leg/cartesianEndEffectorWrench:o">(l_foot,l_sole,root_link)</param>
             <param name="/icub02/wholeBodyDynamics/left_foot/cartesianEndEffectorWrench:o">(l_foot,l_sole,l_sole)</param>
             <param name="/icub02/wholeBodyDynamics/right_leg/cartesianEndEffectorWrench:o">(r_foot,r_sole,root_link)</param>
-            <param name="/icub02/wholeBodyDynamics/right_foot/cartesianEndEffectorWrench:o">(r_foot,r_sole,l_sole)</param>
+            <param name="/icub02/wholeBodyDynamics/right_foot/cartesianEndEffectorWrench:o">(r_foot,r_sole,r_sole)</param>
 
         </group>
 
