@@ -21,19 +21,19 @@ set(ROBOT_DIR "${CMAKE_CURRENT_SOURCE_DIR}/${ROBOT_NAME}")
 
 icubcontrib_set_default_prefix()
 
-if(INSTALL_ALL_ROBOTS)
-    # List the subdirectories (http://stackoverflow.com/questions/7787823/cmake-how-to-get-the-name-of-all-subdirectories-of-a-directory)
-    macro(SUBDIRLIST result curdir)
-        file(GLOB children RELATIVE ${curdir} ${curdir}/*)
-        set(dirlist "")
-        foreach(child ${children})
-            if(IS_DIRECTORY ${curdir}/${child})
-                list(APPEND dirlist ${child})
-            endif()
-        endforeach()
-        set(${result} ${dirlist})
-    endmacro()
+# List the subdirectories (http://stackoverflow.com/questions/7787823/cmake-how-to-get-the-name-of-all-subdirectories-of-a-directory)
+macro(SUBDIRLIST result curdir)
+    file(GLOB children RELATIVE ${curdir} ${curdir}/*)
+    set(dirlist "")
+    foreach(child ${children})
+        if(IS_DIRECTORY ${curdir}/${child})
+            list(APPEND dirlist ${child})
+        endif()
+    endforeach()
+    set(${result} ${dirlist})
+endmacro()
 
+if(INSTALL_ALL_ROBOTS)
     # Get list of models
     subdirlist(subdirs ${CMAKE_CURRENT_SOURCE_DIR})
 
@@ -77,3 +77,28 @@ else()
 endif()
 
 icubcontrib_add_uninstall_target()
+
+# Tests
+option(BUILD_TESTING "Create tests using CMake" OFF)
+if(BUILD_TESTING)
+    # We use yarprobotinterface library to run the tests
+    find_package(YARP REQUIRED)
+    include(CTest)
+    
+    # Get list of models
+    subdirlist(subdirs ${CMAKE_CURRENT_SOURCE_DIR})
+    
+    foreach (dir ${subdirs})
+        message(STATUS "Checking if ${dir}/yarprobotinterface.ini exists")
+        if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/${dir}/yarprobotinterface.ini)
+            message(STATUS "Exists, adding test for ${dir}")
+            # By running yarprobotinterface in the ${dir} directory,
+            # we automatically get the config file specified in yarprobotinterface.ini
+            add_test(NAME robots-configuration::${dir}
+                     COMMAND yarprobotinterface --dryrun
+                     WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/${dir})
+        else()
+            message(STATUS "Does not")
+        endif()
+    endforeach()
+endif()
